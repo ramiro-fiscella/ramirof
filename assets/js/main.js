@@ -1,23 +1,20 @@
-/*==================== MENU SHOW Y HIDDEN ====================*/
+/*=============== CHANGE BACKGROUND HEADER ===============*/
+function scrollHeader() {
+  const header = document.querySelector('header')
+  if (this.scrollY >= 50) header.classList.add('scroll-header')
+  else header.classList.remove('scroll-header')
+}
+window.addEventListener('scroll', scrollHeader)
+/*=============== SERVICES MODAL ===============*/
 
-/*===== MENU SHOW =====*/
-/* Validate if constant exists */
+/*=============== MIXITUP FILTER PORTFOLIO ===============*/
 
-/*===== MENU HIDDEN =====*/
-/* Validate if constant exists */
+/* Link active work */
 
-/*==================== REMOVE MENU MOBILE ====================*/
+/*=============== SWIPER TESTIMONIAL ===============*/
 
-/*==================== ACCORDION SKILLS ====================*/
+/*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
-/*==================== QUALIFICATION TABS ====================*/
+/*=============== LIGHT DARK THEME ===============*/
 
-/*==================== PORTFOLIO SWIPER  ====================*/
-
-/*==================== SCROLL SECTIONS ACTIVE LINK ====================*/
-
-/*==================== CHANGE BACKGROUND HEADER ====================*/
-
-/*==================== SHOW SCROLL UP ====================*/
-
-/*==================== DARK LIGHT THEME ====================*/
+/*=============== SCROLL REVEAL ANIMATION ===============*/

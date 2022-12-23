@@ -1,42 +1,192 @@
-- HOME
-  home\_\_social
-  https://www.linkedin.com/
-  https://dribbble.com/
-  https://github.com/
+========== HOME ==========
+.home__greeting
+Hello, I'm
 
-home\_\_description
-High level experience in web design and development knowledge, producing quality work.
+.home__name
+Ansel Klee
 
-- ABOUT
-  about\_\_description
-  Web developer, with extensive knowledge and years of experience, working in web technologies and Ui / Ux design, delivering quality work.
+.home__education
+Frontend Developer
 
-about\_\_info-name
-Years <br> experience
-Completed <br> project
-Companies <br> worked
+.home__social-link
+https://www.linkedin.com/
+https://github.com/
+https://dribbble.com/
 
-- SERVICES
-  services\_\_modal-service
-  I develop the user interface.
-  Web page development.
-  I create ux element interactions.
-  I position your company brand.
+.home__scroll-name
+Scroll Down
 
-* PORTFOLIO
-  portfolio\_\_description
-  Website adaptable to all devices, with ui components and animated interactions.
+========== ABOUT ==========
+.section__subtitle | .section__title
+My Intro
+About Me
 
-- PROJECT
-  project\_\_description
-  Contact me now and get a 30% discount on your new project.
+.about__title | .about__subtitle
+Experience
+8 Years Working
 
-* TESTIMONIAL
-  testimonial\_\_description
-  I get a good impression, I carry out my project with all the possible quality and attention and support 24 hours a day.
+Completed
+48 + Projects
 
-- FOOTER
-  footer\_\_social
-  https://www.facebook.com/
-  https://www.instagram.com/
-  https://twitter.com/
+Support
+Online 24/7
+
+.about__description
+Frontend developer, I create web pages with UI / UX user interface, 
+I have years of experience and many clients are happy 
+with the projects carried out.
+
+========== SKILLS ==========	
+.section__subtitle | .section__title
+My abilities
+My Experience
+
+.skills__title
+Frontend developer
+Backend Developer
+
+.skills__name | .skills__level
+HTML
+Basic
+
+CSS
+Advanced
+
+JavaScript
+Intermediate
+
+Bootstrap
+Intermediate
+
+Git
+Intermediate
+
+React
+Intermediate
+
+PHP
+Intermediate
+
+Node Js
+Basic
+
+Python
+Intermediate
+
+MySQL
+Intermediate
+
+Firebase
+Intermediate
+
+========== SERVICES ==========
+.section__subtitle | .section__title
+My Services
+What I Offer
+
+.services__title
+Product <br> Designer
+
+Ui/Ux <br> Designer
+
+Visual <br> Designer
+
+.services__modal-description
+Service with more than 3 years of experience. 
+Providing quality work to clients and companies.
+
+.services__modal-info
+I develop the user interface.
+
+Web page development.
+
+I create ux element interactions.
+
+I position your company brand.
+
+Design and mockups of products for companies.
+
+
+========== WORK  ==========
+.section__subtitle | .section__title
+My Portfolio
+Recent Works
+
+.work__item
+All
+Web
+Movil
+Design
+
+.work__title
+Web design
+
+App movil
+
+Brand design
+
+Web design
+
+App movil
+
+========== TESTIMONIALS ==========
+.section__subtitle | .section__title
+My clients say
+Testimonial
+
+.testimonial__name
+Jhon Doe
+
+Paula Vusy
+
+Sara Cill
+
+.testimonial__description
+A really good job, all aspects of the project were 
+followed step by step and with good results.
+
+
+========== CONTACT ==========
+.section__subtitle | .section__title
+Get in touch
+Contact Me
+
+.contact__title
+Talk to me
+
+Write me your project
+
+.contact__card-title | .contact__card-data
+Email
+user@gmail.com
+
+Whatsapp
+999-888-777
+
+Messenger
+user.fb123
+
+.contact__button
+mailto:examplemail@correo.com
+
+https://api.whatsapp.com/send?phone=51123456789&text=Hello, more information!
+
+https://m.me/bedimcode
+
+========== FOOTER ==========
+.footer__title
+Ansel
+
+.footer__link
+About
+
+Projects
+
+Testimonials
+
+.footer__social-link
+https://www.facebook.com/
+https://www.instagram.com/
+https://twitter.com/
+
+.footer__copy
