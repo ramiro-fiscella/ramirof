@@ -13,17 +13,18 @@
         Pink: hsl(356, 66%, 75%)
         Teal: hsl(174, 63%, 62%)
   */
-  --first-hue: 35;
-  --sat: 80%;
-  --lig: 55%;
-  --second-hue: 28;
+  --first-hue: 102;
+  --sat: 39%;
+  --lig: 60%;
+  --second-hue: 15;
+
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 71%); /* -4% */
-  --title-color: hsl(var(--second-hue), 15%, 95%);
-  --text-color: hsl(var(--second-hue), 8%, 75%);
-  --text-color-light: hsl(var(--second-hue), 4%, 55%);
-  --body-color: hsl(var(--second-hue), 11%, 24%);
-  --container-color: hsl(var(--second-hue), 32%, 12%);
+  --first-color-alt: hsl(var(--first-hue), var(--sat), 94%); /* -4% */
+  --title-color: hsl(var(--second-hue), 100%, 55%); /*Ramiro Fiscella*/
+  --text-color: hsl(var(--second-hue), 0%, 94%);
+  --text-color-light: hsl(var(--second-hue), 30%, 90%); /* titulos chicos */
+  --body-color: hsl(var(--second-hue), 0%, 0%);
+  --container-color: hsl(var(--first-hue), 10%, 6%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
@@ -255,8 +256,8 @@ body.light-theme {
   bottom: 1rem;
   background-color: hsla(var(--second-hue), 32%, 16%, 0.8);
   width: 90%;
-  border-radius: 4rem;
-  padding: 1rem, 2.25rem;
+  border-radius: 4px;
+  padding: 0.1rem;
   backdrop-filter: blur(10px);
   transition: 0.4s;
 }
@@ -272,18 +273,13 @@ body.light-theme {
 .nav__link {
   color: var(--text-color);
   font-size: 1.25rem;
-  padding: 0.4rem;
+  padding: 0.2rem;
   display: flex;
-  border-radius: 5rem;
+  border-radius: 2px;
 }
 
 /* Active link */
 .active-link {
-  background: linear-gradient(
-    180deg,
-    hsla(var(--first-hue), var(--sat), var(--lig), 1),
-    hsla(var(--first-hue), var(--sat), var(--lig), 0.2)
-  );
   box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), 0.4);
   color: var(--title-color);
 }
@@ -650,7 +646,7 @@ body.light-theme {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 2px solid var(--text-color-light);
+  border: 2px solid var(--text-color);
   background: none;
   color: var(--text-color);
   outline: none;
