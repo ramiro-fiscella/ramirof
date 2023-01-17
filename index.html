@@ -19,7 +19,7 @@
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="/assets/css/styles.css" />
 
-    <title>Responsive Portfolio Website</title>
+    <title>RFK Portfolio Website</title>
   </head>
 
   <body>
@@ -28,38 +28,45 @@
       <nav class="nav container">
         <a href="#" class="nav__logo">RKF</a>
 
-        <div class="nav__menu">
-          <ul class="nav__list">
+        <div class="nav__menu" id="nav-menu">
+          <ul class="nav__list grid">
             <li class="nav__item">
               <a href="#home" class="nav__link active-link">
-                <i class="bx bx-home-alt"></i>
+                <i class="bx bx-home-alt"></i>home
               </a>
             </li>
-
+            
             <li class="nav__item">
               <a href="#about" class="nav__link">
-                <i class="bx bx-user"></i>
+                <i class="bx bx-user"></i>about
               </a>
             </li>
-
+            
             <li class="nav__item">
               <a href="#skills" class="nav__link">
-                <i class="bx bx-book-bookmark"></i>
+                <i class="bx bx-book-bookmark"></i>skills
               </a>
             </li>
-
+            
             <li class="nav__item">
               <a href="#work" class="nav__link">
-                <i class="bx bx-briefcase-alt-2"></i>
+                <i class="bx bx-briefcase-alt-2"></i>work
               </a>
             </li>
 
             <li class="nav__item">
               <a href="#contact" class="nav__link">
-                <i class="bx bx-message-detail"></i>
+                <i class="bx bx-message-detail"></i>contact
               </a>
             </li>
           </ul>
+          <i class="bx bx-x nav__close" id="nav-close"></i>
+        </div>
+
+        <div class="nav__btns">
+          <div class="nav__toggle" id="nav-toggle">
+            <i class="bx bx-menu"></i>
+          </div>
         </div>
 
         <!-- Theme change button -->
@@ -73,18 +80,18 @@
       <section class="home section" id="home">
         <div class="home__container container grid">
           <div class="home__data">
-            <span class="home__greeting">Hello, I'm</span>
-            <h1 class="home__name">Ramiro Fiscella</h1>
-            <h3 class="home__education">Front-end Developer</h3>
+            <span class="home__greeting">Ramiro { Kali } Fiscella</span>
+            <h1 class="home__name">Ramiro K. Fiscella</h1>
+            <h3 class="home__education">Developer & Designer</h3>
 
             <div class="home__buttons">
+              <a href="#about" class="button">About me</a>
               <a
                 href="assets/pdf/ramiro-fiscella-resume.pdf"
                 class="button button--ghost"
               >
-                Download CV
+                Curriculum
               </a>
-              <a href="#about" class="button">About me</a>
             </div>
           </div>
 
@@ -120,21 +127,21 @@
           <div class="about__data">
             <div class="about__info">
               <div class="about__box">
-                <i class="bx bx-award about__icon"></i>
+                <i class="bx bx-book-reader about__icon"></i>
                 <h3 class="about__title">Experience</h3>
                 <span class="about__subtitle">1 Year Learning</span>
               </div>
 
               <div class="about__box">
-                <i class="bx bx-briefcase-alt-2 about__icon"></i>
+                <i class='bx bx-extension about__icon' ></i>
                 <h3 class="about__title">Completed</h3>
                 <span class="about__subtitle">10 + Projects</span>
               </div>
 
               <div class="about__box">
-                <i class="bx bx-support about__icon"></i>
-                <h3 class="about__title">Suport</h3>
-                <span class="about__subtitle">Online 24/7</span>
+                <i class='bx bx-coffee about__icon bx-tada'></i>
+                <h3 class="about__title">Coffee</h3>
+                <span class="about__subtitle">powered</span>
               </div>
             </div>
 
@@ -154,12 +161,12 @@
 
       <!--==================== SKILLS ====================-->
       <section class="skills section" id="skills">
-        <span class="section__subtitle">My abilities</span>
-        <h2 class="section__title">My Experience</h2>
+        <span class="section__subtitle">What's in</span>
+        <h2 class="section__title">My Toolbox?</h2>
 
         <div class="skills__container container grid">
           <div class="skills__content">
-            <h3 class="skills__title">Front-end Developer</h3>
+            <h3 class="skills__title">Web Develoment</h3>
 
             <div class="skills__box">
               <div class="skills__group">
@@ -168,7 +175,7 @@
 
                   <div>
                     <h3 class="skills__name">HTML</h3>
-                    <span class="skills__level">Basic</span>
+                    <span class="skills__level">Advance</span>
                   </div>
                 </div>
 
@@ -205,8 +212,8 @@
                   <i class="bx bxs-badge-check"></i>
 
                   <div>
-                    <h3 class="skills__name">Git</h3>
-                    <span class="skills__level">Basic</span>
+                    <h3 class="skills__name">React</h3>
+                    <span class="skills__level">Learning</span>
                   </div>
                 </div>
 
@@ -214,8 +221,8 @@
                   <i class="bx bxs-badge-check"></i>
 
                   <div>
-                    <h3 class="skills__name">Figma</h3>
-                    <span class="skills__level">Intermediate</span>
+                    <h3 class="skills__name">Git</h3>
+                    <span class="skills__level">Basic</span>
                   </div>
                 </div>
               </div>
@@ -225,7 +232,7 @@
 
 
           <div class="skills__content">
-            <h3 class="skills__title">Designer</h3>
+            <h3 class="skills__title">Design</h3>
 
             <div class="skills__box">
               <div class="skills__group">
@@ -235,10 +242,11 @@
                   <i class="bx bxs-badge-check"></i>
 
                   <div>
-                    <h3 class="skills__name">Figma</h3>
+                    <h3 class="skills__name">Adobe XD</h3>
                     <span class="skills__level">Intermediate</span>
                   </div>
                 </div>
+          
 
                 <div class="skills__data">
                   <i class="bx bxs-badge-check"></i>
@@ -259,6 +267,35 @@
                 </div>
               </div>
             </div>
+
+            <div class="skills__group">
+              <div class="skills__data">
+                <i class="bx bxs-badge-check"></i>
+
+                <div>
+                  <h3 class="skills__name">Figma</h3>
+                  <span class="skills__level">Basic</span>
+                </div>
+              </div>
+
+              <!-- <div class="skills__data">
+                <i class="bx bxs-badge-check"></i>
+
+                <div>
+                  <h3 class="skills__name">React</h3>
+                  <span class="skills__level">Learning</span>
+                </div>
+              </div>
+
+              <div class="skills__data">
+                <i class="bx bxs-badge-check"></i>
+
+                <div>
+                  <h3 class="skills__name">Git</h3>
+                  <span class="skills__level">Basic</span>
+                </div>
+              </div>
+            </div> -->
           </div>
         </div>
       </section>

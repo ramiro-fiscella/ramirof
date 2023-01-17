@@ -30,6 +30,8 @@ function scrollActive() {
 
 window.addEventListener(`scroll`, scrollActive)
 
+/*=============== HOVER ABOUT CARDS ===============*/
+
 /*=============== LIGHT DARK THEME ===============*/
 const themeButton = document.getElementById('theme-button')
 const lightTheme = 'light-theme'

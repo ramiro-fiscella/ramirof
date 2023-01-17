@@ -3,7 +3,7 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
-  --header-height: 3.5rem;
+  --header-height: 3rem;
 
   /*========== Colors ==========*/
   /*Color mode HSL(hue, saturation, lightness)*/
@@ -223,7 +223,7 @@ body.light-theme {
   color: var(--text-color-light);
 }
 
-/*=============== HEADER & NAV===============*/
+/*=============== HEADER ===============*/
 .header {
   position: fixed;
   top: 0;
@@ -233,6 +233,8 @@ body.light-theme {
   z-index: var(--z-fixed);
   transition: 0.4s;
 }
+
+/*=============== NAV ===============*/
 
 .nav {
   height: var(--header-height);
@@ -253,34 +255,23 @@ body.light-theme {
 
 .nav__menu {
   position: fixed;
-  bottom: 1rem;
-  background-color: hsla(var(--second-hue), 32%, 16%, 0.8);
   width: 90%;
-  border-radius: 4px;
-  padding: 0.1rem;
-  backdrop-filter: blur(10px);
   transition: 0.4s;
 }
 
 .nav__list {
   display: flex;
-  justify-content: space-between;
-  align-items: center;
-
-  margin: 1rem;
+  justify-content: space-around;
 }
 
 .nav__link {
   color: var(--text-color);
-  font-size: 1.25rem;
-  padding: 0.2rem;
-  display: flex;
-  border-radius: 2px;
+  font-size: 1rem;
+  display: block;
 }
 
 /* Active link */
 .active-link {
-  box-shadow: 0 0 16px hsla(var(--first-hue), var(--sat), var(--lig), 0.4);
   color: var(--title-color);
 }
 
@@ -293,7 +284,7 @@ body.light-theme {
 .home__container {
   position: relative;
   row-gap: 4.5rem;
-  padding-top: 2rem;
+  padding-top: 1rem;
 }
 
 .home__data {
@@ -327,14 +318,14 @@ body.light-theme {
 
 .home__handle {
   justify-self: center;
-  width: 190px;
+  width: 200px;
   height: 293px;
   background: linear-gradient(
     180deg,
     hsla(var(--first-hue), var(--sat), var(--lig), 1),
     hsla(var(--first-hue), var(--sat), var(--lig), 0.2)
   );
-  border-radius: 10rem 10rem 1rem 1rem;
+  border-radius: 1px;
   display: flex;
   align-items: flex-end;
   justify-content: center;
@@ -365,7 +356,7 @@ body.light-theme {
   background-color: var(--container-color);
   color: var(--first-color);
   padding: 0.25rem;
-  border-radius: 0.25rem;
+  border-radius: 1px;
   display: flex;
   font-size: 1rem;
   transition: 0.4s;
@@ -407,19 +398,20 @@ body.light-theme {
   background-color: var(--first-color);
   color: var(--body-color);
   padding: 0.75rem 1rem;
-  border-radius: 0.5rem;
+  border-radius: 1px;
   font-weight: var(--font-medium);
   transition: 0.4s;
+  border: 1px solid var(--first-color);
 }
 
 .button:hover {
   background-color: var(--first-color-alt);
-  color: var(--body-color);
+  color: var(--title-color);
 }
 
 .button--ghost {
-  background-color: transparent;
   border: 2px solid var(--first-color);
+  background-color: transparent;
   color: var(--first-color);
 }
 /*=============== ABOUT ===============*/
@@ -429,7 +421,7 @@ body.light-theme {
 
 .about__img {
   width: 220px;
-  border-radius: 1.5rem;
+  border-radius: 2px;
   justify-self: center;
 }
 
@@ -451,7 +443,7 @@ body.light-theme {
 }
 
 .about__icon {
-  font-size: 1.5rem;
+  font-size: 1.8rem;
   color: var(--first-color);
   margin-bottom: 0.5rem;
 }
@@ -646,12 +638,12 @@ body.light-theme {
   left: 0;
   width: 100%;
   height: 100%;
-  border: 2px solid var(--text-color);
+  border: 1px solid var(--first-color);
   background: none;
   color: var(--text-color);
   outline: none;
   padding: 1.5rem;
-  border-radius: 0.75rem;
+  border-radius: 2px;
   z-index: 1;
 }
 
@@ -708,9 +700,9 @@ body.light-theme {
 .footer__social-link {
   background-color: var(--body-color);
   color: var(--first-color);
-  padding: 0.25rem;
-  border-radius: 0.25rem;
-  font-size: 1rem;
+  padding: 0.4rem;
+  border-radius: 1px;
+  font-size: 1.4rem;
   display: inline-flex;
 }
 
@@ -740,6 +732,11 @@ body.light-theme {
 @media screen and (max-width: 320px) {
   .nav__menu {
     padding: 1rem 1.5rem;
+  }
+  .nav__list {
+    position: fixed;
+    bottom: 1rem;
+    background-color: #fff;
   }
 
   .home__buttons {
