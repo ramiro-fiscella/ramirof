@@ -13,9 +13,6 @@
       rel="stylesheet"
     />
 
-    <!--==================== SWIPER CSS ====================-->
-    <link rel="stylesheet" href="" />
-
     <!--==================== CSS ====================-->
     <link rel="stylesheet" href="/assets/css/styles.css" />
 
@@ -56,7 +53,7 @@
 
             <li class="nav__item">
               <a href="#contact" class="nav__link">
-                <i class="bx bx-message-detail nav__icon"></i>contact
+                <i class="bx bx-message-detail nav__icon"></i>touch
               </a>
             </li>
           </ul>
@@ -64,13 +61,13 @@
         </div>
 
         <div class="nav__btns">
+          <i class="bx bxs-adjust-alt change-theme" id="theme-button"></i>
           <div class="nav__toggle" id="nav-toggle">
-            <i class="bx bx-menu"></i>
+            <i class="bx bxs-grid"></i>
           </div>
         </div>
 
         <!-- Theme change button -->
-        <!-- <i class="bx bx-moon change-theme" id="theme-button"></i> -->
       </nav>
     </header>
 
@@ -79,40 +76,45 @@
       <!--==================== HOME ====================-->
       <section class="home section" id="home">
         <div class="home__container container grid">
-          <div class="home__data">
-            <span class="home__greeting">Ramiro { Kali } Fiscella</span>
-            <h1 class="home__name">Ramiro K. Fiscella</h1>
-            <h3 class="home__education">Developer & Designer</h3>
-
-            <div class="home__buttons">
-              <a href="#about" class="button">About me</a>
-              <a
-                href="assets/pdf/ramiro-fiscella-resume.pdf"
-                class="button button--ghost"
-              >
-                Curriculum
+            <div class="home__content grid">
+                <div class="home__social">
+              <a href="https://www.linkedin.com/in/ramiro-fiscella/?locale=en_US" target="_blank" class="home__social-icon">
+                <i class="bx bxl-linkedin-square"></i>
               </a>
+  
+              <a href="https://github.com/ramiro-fiscella" target="_blank" class="home__social-icon">
+                <i class="bx bxl-github"></i>
+              </a>
+            </div>
+            
+            <div class="home__img">
+             <div class="home__blob">
+               <img src="/assets/img/kermit.png" alt="" class="home__blob-img" />
+              </div>
+            </div>
+
+            <div class="home__data">
+              <h1 class="home__title">Hi, I'm Ramiro K. Fiscella</h1>
+              <h3 class="home__subtitle">Developer & Designer</h3>
+              <p class="home__description">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, eveniet.</p>
+              
+
+                <a
+                  href="assets/pdf/ramiro-fiscella-resume.pdf"
+                  class="button button--flex"
+                >
+                  Download CV
+                </a>
             </div>
           </div>
 
-          <div class="home__handle">
-            <img src="/assets/img/kermit.png" alt="" class="home__img" />
-          </div>
-
-          <div class="home__social">
-            <a href="https://www.linkedin.com/in/ramiro-fiscella/?locale=en_US" target="_blank" class="home__social-link">
-              <i class="bx bxl-linkedin-square"></i>
-            </a>
-
-            <a href="https://github.com/ramiro-fiscella" target="_blank" class="home__social-link">
-              <i class="bx bxl-github"></i>
-            </a>
-          </div>
-
-          <a href="#about" class="home__scroll">
-            <i class="bx bx-mouse home__scroll-icon"></i>
-            <span class="home__scroll-name">Scroll Down</span>
-          </a>
+         <!-- <div class="home__scroll">
+                <a href="#about" class="home__scroll-button button--flex">
+                    <i class="uil uil-mouse-alt home__scroll-mouse"></i>
+                    <span class="home__scroll-name">Scroll down</span>
+                    <i class="uil uil-arrow-down home__scroll-arrow"></i>
+                </a>
+            </div> -->
         </div>
       </section>
 
