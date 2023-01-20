@@ -1,34 +1,33 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;400&display=swap');
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 3rem;
 
-  --first-hue: 100;
-  --sat: 39%;
-  --lig: 60%;
-  --second-hue: 15;
+  --first-hue: 40;
+  --sat: 100%;
+  --lig: 50%;
+  --second-hue: 40;
 
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
-  --first-color-alt: hsl(var(--first-hue), var(--sat), 94%); /* -4% */
-  --title-color: hsl(var(--second-hue), 100%, 55%); /*Ramiro Fiscella*/
+  --first-color-alt: hsl(var(--first-hue), 10%, 55%); /* -4% */
+  --title-color: hsl(var(--second-hue), 10%, 100%); /*Ramiro Fiscella*/
   --text-color: hsl(var(--second-hue), 0%, 94%);
   --text-color-light: hsl(var(--second-hue), 30%, 90%); /* titulos chicos */
-  --body-color: hsl(var(--second-hue), 0%, 0%);
-  --container-color: hsl(var(--first-hue), 10%, 6%);
+  --body-color: hsl(var(--second-hue), 14%, 9%);
+  --container-color: hsl(var(--first-hue), 15%, 6%);
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Poppins', sans-serif;
-  --biggest-font-size: 1.75rem;
-  --h1-font-size: 1.5rem;
-  --h2-font-size: 1.25rem;
-  --h3-font-size: 1rem;
-  --normal-font-size: 0.938rem;
-  --small-font-size: 0.813rem;
-  --smaller-font-size: 0.75rem;
-  --tiny-font-size: 0.625rem;
+  --body-font: 'Hanken Grotesk', sans-serif;
+  --biggest-font-size: 2.2rem;
+  --h1-font-size: 1.9rem;
+  --h2-font-size: 1.6rem;
+  --h3-font-size: 1.4rem;
+  --normal-font-size: 1.1rem;
+  --small-font-size: 1rem;
+  --smaller-font-size: 0.9rem;
+  --tiny-font-size: 0.78rem;
 
   /*========== Font weight ==========*/
   --font-medium: 500;
@@ -126,7 +125,7 @@ img {
 body.light-theme {
   --title-color: hsl(var(--second-hue), 15%, 15%);
   --text-color: hsl(var(--second-hue), 8%, 35%);
-  --body-color: hsl(var(--second-hue), 20%, 90%);
+  --body-color: hsl(var(--second-hue), 0%, 90%);
   --container-color: hsl(38, 53%, 90%);
 }
 /*========== 
@@ -138,7 +137,7 @@ body.light-theme {
 }
 
 .light-theme .nav__menu {
-  background-color: hsla(var(--second-hue), 32%, 90%, 0.8);
+  background-color: hsla(var(--second-hue), 32%, 90%);
 }
 
 .light-theme .section__subtitle {
@@ -175,11 +174,11 @@ body.light-theme {
 }
 
 .light-theme::-webkit-scrollbar {
-  background-color: hsl(var(--second-hue), 8%, 66%);
+  background-color: hsl(var(--second-hue), 10%, 80%);
 }
 
 .light-theme::-webkit-scrollbar-thumb {
-  background-color: hsl(var(--second-hue), 8%, 53%);
+  background-color: hsl(var(--second-hue), 8%, 70%);
 }
 
 .light-theme::-webkit-scrollbar-thumb:hover {
@@ -243,7 +242,7 @@ body.light-theme {
 .nav__logo,
 .nav__toggle {
   color: var(--title-color);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-semibold);
 }
 
 .nav__logo:hover {
@@ -283,7 +282,7 @@ body.light-theme {
   align-items: center;
   font-size: var(--small-font-size);
   color: var(--font-color);
-  font-weight: var(--font-medium);
+  font-weight: var(--font-semibold);
 }
 
 .nav__link:hover {
@@ -344,7 +343,7 @@ body.light-theme {
 
 .home__social-icon {
   font-size: 2rem;
-  color: var(--first-color);
+  color: var(--title-color);
 }
 
 .home__social-icon:hover {
@@ -368,47 +367,19 @@ body.light-theme {
 }
 
 .home__title {
+  color: var(--first-color);
   font-size: var(--biggest-font-size);
 }
 
 .home__subtitle {
   font-size: var(--h3-font-size);
-  color: var(--text-color);
+  color: var(--title-color);
   font-weight: var(--font-semibold);
   margin-bottom: 0.75rem;
 }
 
 .home__description {
   margin-bottom: 2rem;
-}
-
-.home__scroll {
-  display: none;
-  border: none;
-}
-
-.home__scroll-button {
-  color: var(--first-color);
-  transition: 0.3s;
-}
-
-.home__scroll-button:hover {
-  transform: translateY(0.25rem);
-}
-
-.home__scroll-mouse {
-  font-size: 2rem;
-}
-
-.home__scroll-name {
-  font-size: var(--small-font-size);
-  color: var(--title-color);
-  font-weight: var(--font-medium);
-  margin-right: 0.25rem;
-}
-
-.home__scroll-arrow {
-  font-size: 1.25rem;
 }
 
 /*=============== BUTTONS ===============*/
@@ -424,8 +395,8 @@ body.light-theme {
 }
 
 .button:hover {
-  background-color: var(--first-color-alt);
-  color: var(--title-color);
+  background-color: var(--first-color);
+  color: var(--body-color);
 }
 
 .button--flex {
@@ -474,6 +445,7 @@ body.light-theme {
 
 .about__subtitle {
   font-size: var(--tiny-font-size);
+  color: var(--first-color-alt);
 }
 
 .about__description {
@@ -494,7 +466,7 @@ body.light-theme {
 .skills__title {
   font-size: var(--normal-font-size);
   font-weight: var(--font-medium);
-  color: var(--title-color);
+  color: var(--first-color);
   text-align: center;
   margin-bottom: 1.5rem;
 }
@@ -518,7 +490,7 @@ body.light-theme {
 
 .skills .bx {
   font-size: 1rem;
-  color: var(--title-color);
+  color: var(--first-color);
 }
 
 .skills__name {
@@ -530,6 +502,7 @@ body.light-theme {
 
 .skills__level {
   font-size: var(--tiny-font-size);
+  color: var(--first-color-alt);
 }
 /*=============== SERVICES ===============*/
 
@@ -560,9 +533,27 @@ body.light-theme {
   margin-bottom: 0.25rem;
 }
 
+.work__card .description {
+  font-size: var(--smaller-font-size);
+  color: var(--first-color-alt);
+
+  margin-bottom: 0.8rem;
+}
+
+.work__card .technologies i {
+  font-size: 1.5rem;
+  color: var(--first-color);
+  margin-bottom: 0.5rem;
+}
+
+.work__card:hover {
+  transform: scale(1.05);
+  transition: 0.4s;
+}
+
 .work__button {
   width: max-content;
-  color: var(--first-color);
+  color: var(--title-color);
   font-size: var(--small-font-size);
   display: flex;
   align-items: center;
@@ -604,7 +595,7 @@ body.light-theme {
 
 .contact__card-icon {
   font-size: 2rem;
-  color: var(--title-color);
+  color: var(--first-color);
   margin-bottom: 0.25rem;
 }
 
@@ -615,6 +606,7 @@ body.light-theme {
 
 .contact__card-title {
   font-weight: var(--font-medium);
+  color: var(--first-color-alt);
 }
 
 .contact__card-data {
@@ -753,6 +745,10 @@ body.light-theme {
 
   .nav__menu {
     padding: 2rem 0.25rem 4rem;
+    width: 100%;
+    left: 0;
+    right: 0;
+    margin: 0 auto;
   }
 
   .nav__list {
@@ -763,34 +759,10 @@ body.light-theme {
     grid-template-columns: 0.25fr 3fr;
   }
 
-  .skills__title {
-    font-size: var(--normal-font-size);
-  }
-
-  .about__info {
-    grid-template-columns: repeat(2, 1fr);
-  }
-
-  .skills__box {
-    column-gap: 1rem;
-  }
-
-  .skills__name {
-    font-size: var(--small-font-size);
-  }
-
-  .nav__menu {
-    width: 100%;
-    left: 0;
-    right: 0;
-    margin: 0 auto;
-  }
-
   .about__info {
     grid-template-columns: repeat(3, 140px);
     justify-content: center;
   }
-
   .about__description {
     padding: 0 5rem;
   }
@@ -798,16 +770,24 @@ body.light-theme {
   .skills__container {
     justify-content: center;
   }
-
   .skills__content {
     padding: 2rem 4rem;
+  }
+  .skills__title {
+    font-size: var(--normal-font-size);
+  }
+
+  .skills__box {
+    column-gap: 1rem;
+  }
+  .skills__name {
+    font-size: var(--small-font-size);
   }
 
   .work__container {
     display: grid;
     grid-template-rows: repeat(1, 1fr);
   }
-
   .work__card {
     width: 90vw;
   }
@@ -816,7 +796,6 @@ body.light-theme {
     grid-template-columns: 300px;
     justify-content: center;
   }
-
   .contact__form {
     width: 360px;
     margin: 0 auto;
@@ -837,24 +816,6 @@ body.light-theme {
     justify-self: center;
   }
 
-  .about__container {
-    grid-template-columns: repeat(2, 1fr);
-    align-items: center;
-    column-gap: 4rem;
-  }
-
-  .about__img {
-    width: 350px;
-  }
-
-  .about__data {
-    text-align: initial;
-  }
-
-  .about__info {
-    justify-content: initial;
-  }
-
   .about__box {
     text-align: center;
     padding: 1rem 1.25rem;
@@ -866,8 +827,10 @@ body.light-theme {
   }
 
   .skills__container {
-    grid-template-columns: repeat(2, 1fr);
-    column-gap: 3rem;
+    justify-content: center;
+  }
+  .skills__content {
+    padding: 2rem 4rem;
   }
 
   .work__container {
@@ -930,6 +893,10 @@ body.light-theme {
     column-gap: 4rem;
   }
 
+  .about__img {
+    width: 350px;
+  }
+
   .about__data {
     text-align: initial;
   }
@@ -947,14 +914,15 @@ body.light-theme {
     padding: 0 4rem 0 0;
     margin-bottom: 2.5rem;
   }
-
   .skills__container {
-    grid-template-columns: repeat(2, 350px);
-    column-gap: 3rem;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: auto;
   }
 
   .work__container {
     display: flex;
+    justify-content: space-between;
   }
 
   .contact__container {
