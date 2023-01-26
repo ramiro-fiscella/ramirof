@@ -521,6 +521,7 @@ body.light-theme {
 .work__img {
   border-radius: 1px;
   margin-bottom: 0.75rem;
+  border: 3px solid var(--first-color);
 }
 
 .work__title {
