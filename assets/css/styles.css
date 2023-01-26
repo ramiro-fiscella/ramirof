@@ -120,8 +120,8 @@ img {
 body.light-theme {
   --title-color: hsl(var(--second-hue), 15%, 15%);
   --text-color: hsl(var(--second-hue), 8%, 35%);
-  --body-color: hsl(var(--second-hue), 0%, 90%);
-  --container-color: hsl(38, 53%, 90%);
+  --body-color: hsl(var(--second-hue), 10%, 96%);
+  --container-color: hsl(38, 53%, 94%);
 }
 /*========== 
     Color changes in some parts of 
@@ -132,7 +132,7 @@ body.light-theme {
 }
 
 .light-theme .nav__menu {
-  background-color: hsla(var(--second-hue), 32%, 90%);
+  background-color: var(--body-color);
 }
 
 .light-theme .section__subtitle {
@@ -764,6 +764,10 @@ body.light-theme {
   .container {
     margin-left: 1rem;
     margin-right: 1rem;
+  }
+
+  .home__blob {
+    transform: scale(90%);
   }
 
   .nav__menu {
