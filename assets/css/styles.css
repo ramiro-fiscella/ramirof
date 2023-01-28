@@ -101,18 +101,28 @@ img {
 /*========== Button Dark/Light ==========*/
 .nav__btns {
   display: flex;
-  align-items: center;
+  gap: 01rem;
+  align-items: baseline;
 }
 
 .change-theme {
-  font-size: 1.25rem;
+  font-size: 1.4rem;
   color: var(--title-color);
-  margin-right: 1rem;
-  margin-bottom: 4px;
   cursor: pointer;
 }
 
 .change-theme:hover {
+  color: var(--first-color);
+}
+
+/*========== Button spanish/englis ==========*/
+.change-idiom {
+  font-size: 1.4rem;
+  color: var(--title-color);
+  cursor: pointer;
+}
+
+.change-idiom:hover {
   color: var(--first-color);
 }
 
@@ -156,6 +166,11 @@ body.light-theme {
 .light-theme .footer__link,
 .light-theme .footer__copy {
   color: var(--title-color);
+}
+
+.light-theme .footer__button {
+  color: var(--title-color);
+  border-color: var(--title-color);
 }
 
 .light-theme .about__box {
@@ -290,9 +305,9 @@ body.light-theme {
 
 .nav__close {
   position: absolute;
-  right: 1.3rem;
-  bottom: 0.8rem;
-  font-size: 1.8rem;
+  right: 1.5rem;
+  bottom: 0.7rem;
+  font-size: 1.5rem;
   cursor: pointer;
   color: var(--first-color);
 }
@@ -376,6 +391,9 @@ body.light-theme {
 .home__description {
   margin-bottom: 2rem;
 }
+.home__description span {
+  color: var(--first-color);
+}
 
 /*=============== BUTTONS ===============*/
 .button {
@@ -383,7 +401,7 @@ body.light-theme {
   background-color: var(--first-color);
   color: var(--body-color);
   padding: 0.75rem 1rem;
-  border-radius: 1px;
+  border-radius: 3px;
   font-weight: var(--font-medium);
   transition: 0.4s;
   border: 2px solid var(--first-color);
@@ -407,8 +425,9 @@ body.light-theme {
 
 .about__img {
   width: 220px;
-  border-radius: 2px;
   justify-self: center;
+  border-radius: 6px;
+  background-color: var(--first-color);
 }
 
 .about__data {
@@ -424,7 +443,7 @@ body.light-theme {
 
 .about__box {
   background-color: var(--container-color);
-  border-radius: 0.75rem;
+  border-radius: 6px;
   padding: 0.75rem;
 }
 
@@ -456,7 +475,7 @@ body.light-theme {
 .skills__content {
   background-color: var(--container-color);
   padding: 1.5rem;
-  border-radius: 1px;
+  border-radius: 3px;
 }
 
 .skills__title {
@@ -515,11 +534,11 @@ body.light-theme {
 .work__card {
   background-color: var(--container-color);
   padding: 1rem;
-  border-radius: 1px;
+  border-radius: 6px;
 }
 
 .work__img {
-  border-radius: 1px;
+  border-radius: 3px;
   margin-bottom: 0.75rem;
   border: 3px solid var(--first-color);
 }
@@ -586,7 +605,7 @@ body.light-theme {
 .contact__card {
   background-color: var(--container-color);
   padding: 1rem;
-  border-radius: 1px;
+  border-radius: 3px;
   text-align: center;
 }
 .contact__card:hover {
@@ -649,7 +668,7 @@ body.light-theme {
   color: var(--text-color);
   outline: none;
   padding: 1.5rem;
-  border-radius: 2px;
+  border-radius: 3px;
   z-index: 1;
 }
 
@@ -710,7 +729,7 @@ body.light-theme {
   background-color: var(--body-color);
   color: var(--first-color);
   padding: 0.4rem;
-  border-radius: 1px;
+  border-radius: 3px;
   font-size: 1.4rem;
   display: inline-flex;
 }
@@ -720,13 +739,13 @@ body.light-theme {
 }
 
 .footer__button {
-  color: var(--title-color);
+  color: var(--body-color);
   padding: 0.75rem 0.5rem;
   margin: 3rem 0;
-  border-radius: 1px;
+  border-radius: 3px;
   font-weight: var(--font-medium);
   transition: 0.4s;
-  border: 2px solid var(--title-color);
+  border: 2px solid var(--body-color);
   display: flex;
   align-items: center;
   justify-content: center;
@@ -829,6 +848,12 @@ body.light-theme {
     margin: 0 auto;
   }
 }
+@media screen and (max-width: 568px) {
+  .work__container {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+  }
+}
 
 @media screen and (min-width: 568px) {
   .home__content {
@@ -863,7 +888,7 @@ body.light-theme {
 
   .work__container {
     display: grid;
-    grid-template-rows: repeat(2, 1fr);
+    /* grid-template-rows: repeat(2, 1fr); */
   }
 
   .work__card {
@@ -956,7 +981,7 @@ body.light-theme {
 
   .work__container {
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     margin: auto;
   }
 
@@ -1082,6 +1107,6 @@ body.light-theme {
   .footer__social-link {
     font-size: 1.25rem;
     padding: 0.4rem;
-    border-radius: 0.5rem;
+    border-radius: 3px;
   }
 }

@@ -96,8 +96,7 @@ const sr = ScrollReveal({
 })
 
 sr.reveal(`.home__data`)
-sr.reveal(`.home__handle`, { delay: 260 })
 sr.reveal(`.home__data, .home__scroll, .home__social`, {
-  delay: 900,
+  delay: 400,
   origin: 'bottom',
 })
