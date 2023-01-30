@@ -416,20 +416,20 @@
                   <div class="contact__content">
                     <h3 class="contact__title">Leave a message</h3>
                     
-                    <form action="" class="contact__form">
+                    <form action="https://formspree.io/f/mrgveazz" method="POST" class="contact__form">
                       <div class="contact__form-div">
                         <label for="" class="contact__form-tag">Name</label>
-                        <input type="text" placeholder="Yes, your name goes here" class="contact__form-input">
+                        <input name="name" type="text" placeholder="Your name goes here" class="contact__form-input" required>
                       </div>
 
                       <div class="contact__form-div">
                         <label for="" class="contact__form-tag">Mail</label>
-                        <input type="email" placeholder="Insert your mail" class="contact__form-input">
+                        <input name="email" type="email" placeholder="Insert your mail" class="contact__form-input" required>
                       </div>
 
                       <div class="contact__form-div contact__form-area">
                         <label for="" class="contact__form-tag">Project</label>
-                        <textarea name="" id="" cols="30" rows="10" placeholder="Leave me a message!" class="contact__form-input"></textarea>
+                        <textarea name="message" id="" cols="30" rows="10" placeholder="Leave me a message!" class="contact__form-input" required></textarea>
                       </div>
 
                       <button class="button">Send Menssage</button>
