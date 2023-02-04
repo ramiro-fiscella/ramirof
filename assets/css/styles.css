@@ -558,7 +558,7 @@ body.light-theme {
 .work__card .technologies i {
   font-size: 1.5rem;
   color: var(--first-color);
-  margin-bottom: 0.5rem;
+  margin-bottom: 4px;
 }
 
 .work__card:hover {
@@ -573,6 +573,7 @@ body.light-theme {
   display: flex;
   align-items: center;
   column-gap: 0.25rem;
+  margin-top: 5px;
 }
 
 .work__button:hover .work__icon {
