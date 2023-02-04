@@ -8,7 +8,6 @@
   --sat: 100%;
   --lig: 50%;
   --second-hue: 40;
-
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--first-hue), 10%, 55%); /* -4% */
   --title-color: hsl(var(--second-hue), 10%, 100%); /*Ramiro Fiscella*/
