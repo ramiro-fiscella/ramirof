@@ -361,14 +361,15 @@ body.light-theme {
 
 .home__blob {
   width: 200px;
+  height: 200px;
   border-radius: 50%;
   background-color: var(--first-color);
   overflow: hidden;
 }
 
 .home__blob-img {
-  width: 170px;
-  transform: translateY(10px);
+  width: 250px;
+  transform: translateY(-14px);
 }
 
 .home__data {
