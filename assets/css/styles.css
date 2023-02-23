@@ -1,5 +1,5 @@
 /*=============== GOOGLE FONTS ===============*/
-@import url('https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;400&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Hanken+Grotesk:wght@200;400&display=swap");
 /*=============== VARIABLES CSS ===============*/
 :root {
   --header-height: 2rem;
@@ -18,7 +18,7 @@
 
   /*========== Font and typography ==========*/
   /*.5rem = 8px | 1rem = 16px ...*/
-  --body-font: 'Hanken Grotesk', sans-serif;
+  --body-font: "Hanken Grotesk", sans-serif;
   --biggest-font-size: 2.2rem;
   --h1-font-size: 1.9rem;
   --h2-font-size: 1.6rem;
@@ -575,6 +575,10 @@ body.light-theme {
   align-items: center;
   column-gap: 0.25rem;
   margin-top: 5px;
+}
+
+.work__button:hover {
+  color: var(--first-color);
 }
 
 .work__button:hover .work__icon {
