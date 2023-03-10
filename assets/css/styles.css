@@ -4,16 +4,16 @@
 :root {
   --header-height: 2rem;
 
-  --first-hue: 33;
-  --sat: 100%;
-  --lig: 50%;
+  --first-hue: 40;
+  --sat: 95%;
+  --lig: 45%;
   --second-hue: 40;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--first-hue), 10%, 55%); /* -4% */
   --title-color: hsl(var(--second-hue), 10%, 100%); /*Ramiro Fiscella*/
   --text-color: hsl(var(--second-hue), 0%, 94%);
   --text-color-light: hsl(var(--second-hue), 30%, 90%); /* titulos chicos */
-  --body-color: hsl(var(--second-hue), 14%, 9%);
+  --body-color: hsl(var(--second-hue), 14%, 7%);
   --container-color: hsl(var(--first-hue), 15%, 6%);
 
   /*========== Font and typography ==========*/
@@ -194,6 +194,14 @@ body.light-theme {
   background-color: hsl(var(--second-hue), 8%, 43%);
 }
 /*=============== REUSABLE CSS CLASSES ===============*/
+
+.shadow {
+  box-shadow: black 2rem;
+}
+
+.remark {
+  color: var(--first-color);
+}
 
 .section {
   padding: 2rem 0 4rem;
@@ -384,15 +392,13 @@ body.light-theme {
 .home__subtitle {
   font-size: var(--h3-font-size);
   color: var(--title-color);
-  font-weight: var(--font-semibold);
-  margin-bottom: 0.75rem;
+  font-weight: 300;
+  margin: 0.75rem 0 1.5rem 0;
 }
 
 .home__description {
   margin-bottom: 2rem;
-}
-.home__description span {
-  color: var(--first-color);
+  font-size: 18px;
 }
 
 /*=============== BUTTONS ===============*/
@@ -413,7 +419,6 @@ body.light-theme {
 }
 
 .button--flex {
-  display: inline-flex;
   align-items: center;
   background-color: transparent;
   color: var(--first-color);
@@ -810,20 +815,21 @@ body.light-theme {
   .home__content {
     grid-template-columns: 0.25fr 3fr;
   }
+  .home__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+  }
 
   .about__info {
-    grid-template-columns: repeat(3, 140px);
     justify-content: center;
-  }
-  .about__description {
-    padding: 0 5rem;
   }
 
   .skills__container {
     justify-content: center;
   }
   .skills__content {
-    padding: 2rem 4rem;
+    padding: 2rem 3rem;
   }
   .skills__title {
     font-size: var(--normal-font-size);
@@ -844,20 +850,28 @@ body.light-theme {
     width: 90vw;
   }
 
-  .contact__info {
-    grid-template-columns: 300px;
-    justify-content: center;
-  }
-
   .contact__form {
     width: auto;
     margin: 0 auto;
   }
 }
 @media screen and (max-width: 568px) {
+  .home__buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 0.8rem;
+    text-align: center;
+  }
+  .button--flex {
+    text-align: center;
+  }
   .work__container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
+  }
+
+  .button {
+    width: 90vw;
   }
 }
 
@@ -881,7 +895,6 @@ body.light-theme {
   }
 
   .about__description {
-    padding: 0 4rem 0 0;
     margin-bottom: 2.5rem;
   }
 
@@ -941,7 +954,12 @@ body.light-theme {
   }
   .home__content {
     padding-top: 5rem;
-    column-gap: 2rem;
+    column-gap: 1.5rem;
+  }
+
+  .home__social {
+    margin-left: 1.5rem;
+    transform: translateY(-3.72rem);
   }
 
   .home__scroll {
@@ -951,11 +969,16 @@ body.light-theme {
     margin-left: 3rem;
   }
 
+  .home__buttons {
+    display: flex;
+    gap: 1.5rem;
+  }
+
   .about__container {
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
-    column-gap: 4rem;
-    margin: auto;
+    column-gap: 2.5rem;
+    margin: auto 1.5rem;
   }
 
   .about__img {
@@ -972,11 +995,10 @@ body.light-theme {
 
   .about__box {
     text-align: center;
-    padding: 1rem 1.25rem;
+    padding: 1rem;
   }
 
   .about__description {
-    padding: 0 4rem 0 0;
     margin-bottom: 2.5rem;
   }
   .skills__container {
@@ -988,12 +1010,11 @@ body.light-theme {
   .work__container {
     display: flex;
     justify-content: space-evenly;
-    margin: auto;
+    margin: auto 1.5rem;
   }
 
   .contact__container {
     grid-template-columns: 1fr 3fr;
-    margin: auto;
   }
   .contact__card {
     margin-inline: 2rem;
@@ -1011,10 +1032,6 @@ body.light-theme {
     padding: 0;
   }
 
-  .home__social {
-    transform: translateY(-6rem);
-  }
-
   .container {
     margin-left: auto;
     margin-right: auto;
@@ -1030,6 +1047,11 @@ body.light-theme {
 
   .nav {
     height: 2.5rem;
+  }
+
+  .home__content {
+    column-gap: 2rem;
+    padding-top: 2rem;
   }
 
   .home__handle {
