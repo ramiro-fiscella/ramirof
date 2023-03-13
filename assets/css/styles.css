@@ -248,6 +248,12 @@ body.light-theme {
 }
 
 /*=============== NAV ===============*/
+.nav__icon {
+  width: 14px;
+  display: block;
+  height: 14px;
+}
+
 .nav {
   max-width: 968px;
   height: 2.5rem;
@@ -868,10 +874,6 @@ body.light-theme {
   .work__container {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
-  }
-
-  .button {
-    width: 90vw;
   }
 }
 
