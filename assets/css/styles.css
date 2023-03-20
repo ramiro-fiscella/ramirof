@@ -297,7 +297,7 @@ body.light-theme {
     width: 100%;
     background-color: var(--body-color-solid);
     padding: 2rem 1.5rem 4rem;
-    border-top: 1px solid var(--title-color);
+    border-top: 1px solid var(--first-color);
     transition: 0.3s;
   }
 }
