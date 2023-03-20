@@ -6,7 +6,7 @@
   --header-height: 2rem;
 
   /* --first-hue: 40; */
-  --first-hue: 40;
+  --first-hue: 35;
   --sat: 95%;
   --lig: 55%;
   --second-hue: 40;
@@ -77,6 +77,11 @@ body {
   background-image: var(--body-color);
   color: var(--text-color);
   transition: 0.4s;
+}
+
+*::selection {
+  color: var(--title-color);
+  background: var(--first-color);
 }
 
 h1,
@@ -305,6 +310,7 @@ body.light-theme {
 .nav__list {
   grid-template-columns: repeat(5, 1fr);
   gap: 2rem;
+  margin-right: 2rem;
 }
 
 .nav__link {
