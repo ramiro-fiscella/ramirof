@@ -806,7 +806,7 @@ body.light-theme {
 }
 
 ::-webkit-scrollbar-thumb:hover {
-  background-color: hsl(var(--second-hue), 8%, 20%);
+  background-color: var(--first-color);
 }
 /*=============== BREAKPOINTS ===============*/
 /* For small devices */
