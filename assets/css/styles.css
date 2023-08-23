@@ -3,16 +3,17 @@
 
 /*=============== VARIABLES CSS ===============*/
 :root {
+  /* color: hsl(214, 100%, 50%); */
   --header-height: 2rem;
 
   /* --first-hue: 40; */
-  --first-hue: 35;
-  --sat: 95%;
+  --first-hue: 215;
+  --sat: 100%;
   --lig: 55%;
-  --second-hue: 40;
+  --second-hue: 220;
   --first-color: hsl(var(--first-hue), var(--sat), var(--lig));
   --first-color-alt: hsl(var(--first-hue), 10%, 55%); /* -4% */
-  --title-color: hsl(var(--second-hue), 10%, 100%); /*Ramiro Fiscella*/
+  --title-color: hsl(var(--second-hue), 100%, 100%); /*Ramiro Fiscella*/
   --text-color: hsl(var(--second-hue), 0%, 94%);
   --text-color-light: hsl(var(--second-hue), 30%, 90%); /* titulos chicos */
   --body-color-solid: hsl(var(--second-hue), 8%, 8%);
@@ -149,7 +150,7 @@ body.light-theme {
     hsl(var(--second-hue), 9%, 90%),
     hsl(var(--second-hue), 8%, 90%)
   );
-  --container-color: hsl(38, 53%, 94%);
+  --container-color: hsl(210, 90%, 98%);
 }
 /*========== 
     Color changes in some parts of 
@@ -199,6 +200,12 @@ body.light-theme {
 .light-theme .work__card,
 .light-theme .contact__card {
   box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, 0.1);
+  border: solid 1px hsl(214, 100%, 90%);
+}
+.skills__content,
+.work__card,
+.contact__card {
+  border: solid 1px hsl(220, 100%, 12%);
 }
 
 .light-theme::-webkit-scrollbar {
