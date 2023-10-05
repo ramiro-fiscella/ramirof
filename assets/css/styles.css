@@ -559,18 +559,21 @@ body.light-theme {
 
 /*=============== WORK ===============*/
 .work__container {
-  display: grid;
+  display: flex;
+
   grid-template-columns: repeat(2, 1fr);
 }
 
 .work__card {
   background-color: var(--container-color);
-  padding: 1rem;
-  border-radius: 6px;
+
+  width: 20vw;
+  padding: 1.5rem;
+  border-radius: 10px;
 }
 
 .work__img {
-  border-radius: 3px;
+  border-radius: 6px;
   margin-bottom: 0.75rem;
   border: 3px solid var(--first-color);
 }
