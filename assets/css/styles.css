@@ -899,6 +899,9 @@ body.light-theme {
     display: grid;
     grid-template-columns: repeat(1, 1fr);
   }
+  .work__card {
+    width: 90vw;
+  }
 }
 
 @media screen and (min-width: 568px) {
